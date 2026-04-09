@@ -97,7 +97,7 @@
                 return primer;
             }
         }
-        // .length nos da el largo del arreglo empezando desde 1, por lo que al asignarle un valor se crea un nuevo elemento en esa posición. Se mueven el resto de los elementos una posición a la derecha, lo que deja el elemento 0 vacio y disponible para asignarle el nuevo producto.
+        // .length nos da el largo del arreglo, el cual siempre es 1 mayor que el ultimo índice de este mismo, siempre y cuando no se dejen espacios vacios, por lo que al asignarle un valor se crea un nuevo elemento en esa posición. Se mueven el resto de los elementos una posición a la derecha, lo que deja el elemento 0 vacio y disponible para asignarle el nuevo producto.
         agregarInicio(producto){
             for (let i = this.datos.length; i > 0; i--) {
                 this.datos[i] = this.datos[i - 1];
